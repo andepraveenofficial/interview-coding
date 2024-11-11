@@ -10,9 +10,8 @@ console.log(flatArr);
 
 console.log("=================");
 
-/* -----> recursive function <----- */
-
 const flat = (arr) => {
+	debugger;
 	const output = [];
 	for (let i = 0; i < arr.length; i++) {
 		if (!Array.isArray(arr[i])) {
@@ -24,6 +23,8 @@ const flat = (arr) => {
 	}
 	return output;
 };
+
+/* -----> recursive function <----- */
 
 const flatArray = flat(arr);
 console.log(flatArray);
