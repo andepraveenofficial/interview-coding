@@ -42,4 +42,4 @@ for (let i = 0; i < num; i++) {
 console.log("-----------");
 console.log(triangle);
 
-console.log("==============");
+console.log("===================");
