@@ -10,14 +10,14 @@ console.log(flatArr);
 
 console.log("=================");
 
-const flat = (arr) => {
+const flat = (data) => {
 	debugger;
 	const output = [];
-	for (let i = 0; i < arr.length; i++) {
-		if (!Array.isArray(arr[i])) {
-			output.push(arr[i]);
+	for (let i = 0; i < data.length; i++) {
+		if (!Array.isArray(data[i])) {
+			output.push(data[i]);
 		} else {
-			const items = flat(arr[i]);
+			const items = flat(data[i]);
 			output.push(...items);
 		}
 	}

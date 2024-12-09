@@ -24,6 +24,7 @@ const StateLift = () => {
 	const [text, setText] = useState("");
 	return (
 		<div>
+			<h1>StateLift</h1>
 			<Label text={text} />
 			<TextBox text={text} setText={setText} />
 		</div>

@@ -8,11 +8,14 @@ console.log(" ------------- ");
 let entries = Object.entries(obj);
 console.log(entries);
 
+console.log("---------");
+
+// bubble sort
 for (let i = 0; i < entries.length; i++) {
 	for (let j = 0; j < entries.length - 1; j++) {
 		if (entries[j][1] > entries[j + 1][1]) {
 			// swap
-			[entries[i], entries[j]] = [entries[j], entries[i]];
+			[entries[j], entries[j + 1]] = [entries[j + 1], entries[j]];
 		}
 	}
 }
@@ -20,6 +23,7 @@ for (let i = 0; i < entries.length; i++) {
 console.log(entries);
 
 console.log(" -------------- ");
+
 let sortedObject = Object.fromEntries(entries);
 console.log(sortedObject);
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 /*
 Matrix : 
@@ -23,9 +23,10 @@ const DynamicTable = () => {
 	]);
 
 	/*
-	[""] -> one row, one col
-	["", ""] -> one row, two col
-	["", ""], ["", ""] -> two rows, two cols
+row1 => col1 col2 col3 col4
+row2 => col1 col2 col3 col4
+row3 => col1 col2 col3 col4
+row4 => col1 col2 col3 col4
 	*/
 
 	const addRow = () => {

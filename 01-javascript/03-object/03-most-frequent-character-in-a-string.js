@@ -10,7 +10,6 @@ console.log(str);
 console.log("--------------");
 
 const obj = {};
-let maxRepeat = null;
 let maxRepeatChar = null;
 for (let i = 0; i < str.length; i++) {
 	// console.log(i);
@@ -20,14 +19,16 @@ for (let i = 0; i < str.length; i++) {
 		obj[str[i]]++;
 	}
 
-	if (obj[str[i]] > maxRepeat) {
-		maxRepeat = obj[str[i]];
+	if (maxRepeatChar === null) {
+		maxRepeatChar = str[i];
+	}
+
+	if (obj[str[i]] > obj[maxRepeatChar]) {
 		maxRepeatChar = str[i];
 	}
 }
 
 console.log(obj);
-console.log(maxRepeat);
 console.log(maxRepeatChar);
 
 console.log("==============");

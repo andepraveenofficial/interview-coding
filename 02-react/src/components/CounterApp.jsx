@@ -14,7 +14,7 @@ const CounterApp = () => {
 	});
 
 	useEffect(() => {
-		localStorage.setItem("counter", counter);
+		localStorage.setItem("counter", JSON.stringify(counter));
 	}, [counter]);
 
 	return (

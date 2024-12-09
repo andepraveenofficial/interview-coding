@@ -1,5 +1,16 @@
 // 01-swap
 
+let a = 10;
+let b = 20;
+console.log(a, b);
+
+let temporary = a;
+a = b;
+b = temporary;
+console.log(a, b);
+
+console.log("================");
+
 /* -----> swapping with temporary variable <----- */
 const arr = ["first", 2, 3, 4, "last"];
 console.log(arr); // [ 'first', 2, 3, 4, 'last' ]

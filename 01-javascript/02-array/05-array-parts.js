@@ -6,14 +6,15 @@ console.log(arr);
 console.log("--------------");
 
 const arrParts = [];
-for (let i = 0; i < arr.length; i++) {
-	const mainPart = arr.slice(i, arr.length);
+for (let mainIndex = 0; mainIndex < arr.length; mainIndex++) {
+	const mainPart = arr.slice(0, mainIndex + 1);
 	// console.log(mainPart);
-	for (let j = 0; j < mainPart.length; j++) {
-		const subPart = mainPart.slice(0, j + 1);
-		// console.log(subPart);
+	for (let subIndex = 0; subIndex < mainPart.length; subIndex++) {
+		const subPart = mainPart.slice(subIndex, mainPart.length);
+		console.log(subPart);
 		arrParts.push(subPart);
 	}
+	console.log("---------");
 }
 
 console.log(arrParts);
